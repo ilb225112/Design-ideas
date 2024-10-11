@@ -1,0 +1,71 @@
+/*
+7vh: 7% of viewport height
+7vw: 7& of viewport width
+*/
+
+@keyframes bounce {
+    0% {
+        transform: translate(0, 0); 
+        background-color:violet;
+        color:aliceblue;
+    }
+    10% {
+        transform: translate(10vw, -20vh);
+        background-color:indigo; 
+        color:white;
+
+    }
+    20% {
+        transform: translate(20vw, 0);
+        background-color:blue;
+        color:black;
+    }
+    30% {
+        transform: translate(30vw, -20vh); 
+        background-color:greenyellow;
+        color:red; 
+    }
+    40% {
+        transform: translate(40vw, 0); 
+        background-color:yellow; 
+    }
+    50% {
+        transform: translate(50vw, -20vh);
+        background-color:orange; 
+        color:cyan;
+    }
+    60% {
+        transform: translate(60vw, 0); 
+        background-color:red;
+    }
+    70% {
+        transform: translate(70vw, -20vh); 
+        background-color:pink;
+    }
+    80% {
+        transform: translate(80vw, 0); 
+        background-color:white;   }
+    90% {
+        transform: translate(90vw, -20vh);
+        background-color:grey; 
+    }
+    100% {
+        transform: translate(100vw, 0);
+        background-color:black;  
+    }
+}
+
+.element {
+    position: absolute;
+    bottom: 0;
+    left: -1vw;
+    width: 7vw;
+    height:7vh;
+    border-radius: 50%; 
+    animation: bounce 5s infinite ease-in-out;
+}
+
+body{
+    overflow-x:hidden;
+    background-color: black;
+}

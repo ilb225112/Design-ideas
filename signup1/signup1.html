@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup1.css">
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <div class="left-section">
+                <h1>SIGN UP PAGE FOR YOU....</h1>
+                <p>DESCRIPTION IN QUOTES</p>
+                <p class="signin-link">Already have an account? <a href="../login1/login1.html">Sign In</a></p>
+            </div>
+            <div class="right-section">
+                <div class="form-container">
+                    <div class="signup-box">
+                        <form id="signup-form" method="post">
+                            <h2>Sign UP</h2>
+                            <input type="text" id="username" placeholder="username" required>
+                            <input type="text" id="phone" placeholder="phone no." required>
+                            <input type="email" id="email" placeholder="email" required>
+                            <button type="button" id="confirm-btn">Confirm</button>
+                            <div id="file-upload-container" class="hidden">
+                                <label for="file-upload" class="file-upload-label">
+                                    <input type="file" id="file-upload" required>
+                                    <span>file upload</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="hidden" id="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                    <p class="skip-link"><a href="../parallax_effect/parallax1.html">skip to site without signing in?</a></p>
+                    <p class="red-prompt">Upload the completed file sent to your number, email</p> 
+                </div>
+            </div>
+        </div>
+        <p class="footer-text">**You will receive username and password once your hosting is confirmed**</p>
+    <script src="signup1.js"></script>
+</body>
+</html>
